@@ -26,6 +26,51 @@ particulas_nombres = [
     "Y",
 ]
 
+palabras_sat = [
+    "BUEI",
+    "BUEY",
+    "CACA",
+    "CACO",
+    "CAGA",
+    "CAGO",
+    "CAKA",
+    "CAKO",
+    "COGE",
+    "COJA",
+    "COJE",
+    "COJI",
+    "COJO",
+    "CULO",
+    "FETO",
+    "GUEY",
+    "JOTO",
+    "KACA",
+    "KACO",
+    "KAGA",
+    "KAGO",
+    "KAKA",
+    "KOGE",
+    "KOJO",
+    "KULO",
+    "MAME",
+    "MAMO",
+    "MEAR",
+    "MEAS",
+    "MEON",
+    "MIAR",
+    "MION",
+    "MOCO",
+    "MULA",
+    "PEDA",
+    "PEDO",
+    "PENE",
+    "PUTA",
+    "PUTO",
+    "QULO",
+    "RATA",
+    "RUIN",
+]
+
 apellido_paterno = input("Ingrese su apellido paterno: ").upper()
 apellido_materno = input("Ingrese su apellido materno: ").upper()
 nombre_completo = input("Ingrese su nombre completo: ").upper().split()
@@ -53,6 +98,10 @@ for i in nombre_completo:
         break
 
 print(f"La tercera parte del RFC es: {letra_n}")
+
+if letra_paterna + vocal_paterno + letra_materna + letra_n in palabras_sat:
+    letra_n = "X"
+    print(f"La tercera parte del RFC es: {letra_n}")
 
 # parte fecha
 dia = fecha_nacimiento[0]
