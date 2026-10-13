@@ -1,13 +1,15 @@
 from module.basic import saludar, suma
 from module.calificacion import calificacion
 from module.clase import visita
+from module.menu_2 import menu_circulo
 from module.negativo import numero_negativo
 from module.primo import numeros_primos
 from module.promedio import promedio_estudiantes
 from module.tabla import tabla_multiplicar
+from module.zero import checar_numero
 
 opcion = "0"
-while opcion != "9":
+while opcion != "11":
     print("---Menu de opciones:---")
     print("1. Ingresar un numero")
     print("2. Tabla de multiplicar")
@@ -17,13 +19,16 @@ while opcion != "9":
     print("6. Visita")
     print("7. Calificacion")
     print("8. Promedio de estudiantes")
-    print("9. Salir")
+    print("9. Menu de circulo")
+    print("10. Checar si un numero es positivo, negativo o cero")
+    print("11. Salir")
     opcion = input("Seleccione una opción: ")
 
     if opcion == "1":
         numero_negativo()
     elif opcion == "2":
-        tabla_multiplicar()
+        num = int(input("Ingrese un número para ver su tabla de multiplicar: "))
+        tabla_multiplicar(num)
     elif opcion == "3":
         numeros_primos()
     elif opcion == "4":
@@ -41,6 +46,10 @@ while opcion != "9":
     elif opcion == "8":
         calificacion()
     elif opcion == "9":
+        menu_circulo()
+    elif opcion == "10":
+        checar_numero()
+    elif opcion == "11":
         print("Saliendo del programa.")
     else:
         print("Opción inválida. Por favor, intente de nuevo.")
