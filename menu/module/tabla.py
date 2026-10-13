@@ -1,5 +1,4 @@
-def tabla_multiplicar():
-    num = int(input("Ingresa un número para ver su tabla de multiplicar: "))
+def tabla_multiplicar(num):
     for i in range(1, 11):
         resultado = num * i
         if resultado % 2 == 0:
