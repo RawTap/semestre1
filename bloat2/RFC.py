@@ -4,8 +4,8 @@ import random
 abecedario = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 numerico = "0123456789"
 vocales = "AEIOU"
-nombres = ["JOSE", "MARIA"]
-particulas_nombres = [
+nombres = {"JOSE", "MARIA"}
+particulas_nombres = {
     "DA",
     "DAS",
     "DEL",
@@ -24,9 +24,9 @@ particulas_nombres = [
     "VAM",
     "VOM",
     "Y",
-]
+}
 
-palabras_sat = [
+palabras_sat = {
     "BUEI",
     "BUEY",
     "CACA",
@@ -69,7 +69,7 @@ palabras_sat = [
     "QULO",
     "RATA",
     "RUIN",
-]
+}
 
 apellido_paterno = input("Ingrese su apellido paterno: ").upper()
 apellido_materno = input("Ingrese su apellido materno: ").upper()

@@ -1,12 +1,15 @@
-from module.basic import saludar, suma
-from module.calificacion import calificacion
-from module.clase import visita
-from module.menu_2 import menu_circulo
-from module.negativo import numero_negativo
-from module.primo import numeros_primos
-from module.promedio import promedio_estudiantes
-from module.tabla import tabla_multiplicar
-from module.zero import checar_numero
+from module import (
+    calificacion,
+    checar_numero,
+    menu_circulo,
+    numero_negativo,
+    numeros_primos,
+    promedio_estudiantes,
+    saludar,
+    suma,
+    tabla_multiplicar,
+    visita,
+)
 
 opcion = "0"
 while opcion != "11":
