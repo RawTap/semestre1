@@ -1,15 +1,18 @@
 from math import pi
 
 
+# funcion para sumar 3 numeros y mostrar el resultado
 def suma(dato1, dato2, dato3):
     resultado = dato1 + dato2 + dato3
     print(f"La suma de los 3 numeros es: {resultado}")
 
 
+# funcion para saludar al usuario
 def saludar():
     print("Hola")
 
 
+# funcion para calcular la calificacion de un examen y mostrarla en letra
 def calificacion():
     calificacion = int(input("Ingrese la calificacion del examen (0-100): "))
     if calificacion < 60:
@@ -25,12 +28,14 @@ def calificacion():
     print(f"Con {calificacion} tu calificacion es: {letra}")
 
 
+# funcion para saludar a un usuario y decirle cuantas veces ha visitado el programa
 def visita(nom):
     contador = 0
     contador += 1
     print(f"Hola {nom}, esta es tu visita número {contador}")
 
 
+# funcion para mostrar el menu de circulo y calcular area, perimetro, diametro y volumen de una esfera
 def menu_circulo():
     while True:
         menu = int(
@@ -38,6 +43,11 @@ def menu_circulo():
                 "Menu de circulo, 1:Area, 2:Perimetro, 3: Diametro, 4: Esfera, 5: Salir "
             )
         )
+
+        if menu == 5:
+            print("Adios")
+            break
+
         radio = int(input("Ingrese el radio de su circulo "))
 
         if menu == 1:
@@ -56,14 +66,11 @@ def menu_circulo():
             esfera = 4 / 3 * pi * radio**3
             print(f"El volumen de su esfera es: {esfera:.2f}")
 
-        elif menu == 5:
-            print("Adios")
-            break
-
         else:
             print("Opcion no valida")
 
 
+# funcion para checar si un numero es negativo
 def numero_negativo():
     numero = 0
     while numero >= 0:
@@ -71,6 +78,7 @@ def numero_negativo():
     print(f"Ingresaste {numero}, que es negativo. Fin del programa.")
 
 
+# funcion para mostrar los numeros primos entre 1 y 100
 def numeros_primos():
     print("Los numeros primos entre 1 y 100 son:")
     for num in range(2, 101):
@@ -83,6 +91,7 @@ def numeros_primos():
             print(num)
 
 
+# funcion para calcular el promedio de 10 estudiantes, cada uno con 3 notas
 def promedio_estudiantes():
     promedio_individual = 0.0
     promedio_global = 0.0
@@ -102,6 +111,7 @@ def promedio_estudiantes():
     print(f"El promedio global es: {promedio_global / 10:.2f}")
 
 
+# funcion para mostrar la tabla de multiplicar de un numero y decir si el resultado es par o impar
 def tabla_multiplicar(num):
     for i in range(1, 11):
         resultado = num * i
@@ -111,6 +121,7 @@ def tabla_multiplicar(num):
             print(f"{num} x {i} = {resultado} -> Impar")
 
 
+# Funcion para checar si un numero es positivo, negativo o cero
 def checar_numero():
     num = int(input("Ingrese un número: "))
     if num > 0:
