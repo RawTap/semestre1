@@ -28,7 +28,6 @@ asteroides_nasa = [
         "close_approach_years": [2026, 2031, 2056],
     },
 ]
-
 for asteroide in asteroides_nasa:
     print(
         f"Nombre: {asteroide['name']}, Diametro estimado: {asteroide['estimated_diameter_km']}, Peligroso: {asteroide['is_potentially_hazardous']}, Años de acercamiento: {asteroide['close_approach_years']}"
